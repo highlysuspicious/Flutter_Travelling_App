@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '/src/features/authentication/screen/LoginPage.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -9,21 +10,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Chat App',
-      home: const HomeActivity(),
+      title: 'WanderLog',
+      theme: ThemeData(
+        primarySwatch: Colors.teal,
+      ),
+      home: const LoginPage(
+        imageUrl: 'https://source.unsplash.com/featured/?travel,nature',
+      ),
+
       debugShowCheckedModeBanner: false,
-    );
-  }
-}
-
-class HomeActivity extends StatelessWidget {
-  const HomeActivity({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('ChatApp')),
-      body: const Center(child: Text('Hello World')),
     );
   }
 }
