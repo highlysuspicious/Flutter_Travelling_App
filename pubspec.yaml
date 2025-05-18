@@ -35,9 +35,8 @@ dependencies:
   # Firebase core + auth
   # Google Sign-In
 
-
-  firebase_core: ^2.17.0
-  firebase_auth: ^4.17.6
+  firebase_core: ^2.30.0
+  firebase_auth: ^4.17.0
   firebase_auth_web: ^5.7.6
   google_sign_in: ^6.2.1
 
