@@ -26,7 +26,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/image/Houses_on_shore.jpg
-
+    - assets/image/landmarks.png
 flutter_native_splash:
   color: "#f7f6f1"
   color_dark: "#272727"
