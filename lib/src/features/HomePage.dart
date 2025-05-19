@@ -80,6 +80,7 @@ class _HomePageState extends State<HomePage> {
                 child: ListTile(
                   leading: const Icon(Icons.place),
                   title: Text(name),
+
                 ),
               );
             }).toList(),

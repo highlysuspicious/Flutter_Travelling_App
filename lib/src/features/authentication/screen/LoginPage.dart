@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:math';
-import '/src/features/HomePage.dart'; // Make sure this import is correct
+import '/src/features/HomePage.dart';
+import '/src/features/authentication/screen/ForgotPasswordPage.dart';
 
 class LoginPage extends StatefulWidget {
   final String? imageUrl;
@@ -169,7 +170,17 @@ class _LoginPageState extends State<LoginPage> {
                               child: const Text("Login",
                                   style: TextStyle(fontSize: 16)),
                             ),
-                          )
+                          ),
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const ForgotPasswordPage()),
+                              );
+                            },
+                            child: const Text("Forgot Password?"),
+                          ),
+
                         ],
                       ),
                     ),
