@@ -42,8 +42,8 @@ flutter {
     source = "../.."
 }
 dependencies {
-    implementation 'com.google.firebase:firebase-auth:22.1.1'     // ✅ For Auth
-    implementation 'com.google.firebase:firebase-core:21.1.1'     // ✅ Core (if needed)
+    implementation 'com.google.firebase:firebase-auth:22.1.1'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
     // Add others as needed (Firestore, Storage, etc.)
 }
 
